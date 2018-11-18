@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Aan Uit</title>
+      <meta name="description" content="Mediacollege Amsterdam HTML5 Aan/Uit">
+      <meta name="author" content="Valerie Wilsoe">
+      <link rel="stylesheet" type="text/css" href="opdracht6.css">
+    </head>
+    <body>
+      <h1 id = "kop">Aan Uit</h1>
+      <input type="button" value="Aan" id="button_1" />
+      <input type="button" value="Uit" id="button_2" />
+      <input type="button" value="Helemaal uit" id="button_3" />
+<br>
+    <script>
+    var button_1 = document.getElementById('button_1');
+    var button_2 = document.getElementById('button_2');
+    var button_3 = document.getElementById('button_3');
+    var kop = document.getElementById('kop');
+
+    button_1.addEventListener('click', ()=>{
+      document.body.style.backgroundImage = "url('hallo3.jpg')";
+      kop.style.color = "purple";
+    })
+    button_2.addEventListener('click', ()=>{
+      document.body.style.backgroundImage = "url('hallo2.jpg')";
+      kop.style.color = "blue";
+    })
+    button_3.addEventListener('click', ()=>{
+      document.body.style.backgroundImage = "url('...')";
+      kop.style.color = "white";
+    })
+    knopUit.addEventListener('click', ()=>{
+    })
+    </script>
+  </body>
+</html>
